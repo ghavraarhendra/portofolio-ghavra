@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Ghavra</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Roboto',sans-serif;
+}
+
+body{
+background:url("background.jpsg") center center/cover fixed;
+position:relative;
+min-height:100vh;
+}
+
+body::before{
+content:'';
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.15);
+backdrop-filter:blur(8px);
+z-index:-1;
+}
+
+header{
+background:#17172d;
+color:white;
+text-align:center;
+padding:25px 20px;
+}
+
+header h1{
+font-size:58px;
+font-weight:700;
+margin-bottom:8px;
+}
+
+header p{
+font-size:20px;
+opacity:.9;
+}
+
+nav{
+background:#2a2945;
+display:flex;
+justify-content:center;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+padding:18px 28px;
+font-size:18px;
+transition:.3s;
+}
+
+nav a:hover{
+background:#444168;
+}
+
+.container{
+width:80%;
+max-width:1200px;
+margin:auto;
+padding:40px 0;
+}
+
+.card{
+background:#f4f4f4;
+padding:30px;
+border-radius:14px;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+margin-bottom:30px;
+}
+
+.card h2{
+font-size:24px;
+margin-bottom:15px;
+color:#333;
+}
+
+.card p{
+font-size:17px;
+color:#444;
+line-height:1.6;
+}
+
+.profile-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+}
+
+.profile-card{
+background:#f4f4f4;
+padding:25px;
+border-radius:14px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.profile-card img{
+width:170px;
+height:170px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+.profile-card h3{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.modules-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.module{
+background:#f4f4f4;
+border-radius:14px;
+padding:20px;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.module h3{
+font-size:22px;
+margin-bottom:15px;
+}
+
+.module img{
+width:100%;
+height:450px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.module p{
+font-size:15px;
+line-height:1.5;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.project{
+background:#f4f4f4;
+padding:20px;
+border-radius:14px;
+box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.project h3{
+margin-bottom:15px;
+font-size:22px;
+}
+
+.project img{
+width:100%;
+border-radius:10px;
+}
+
+.project iframe{
+width:100%;
+height:250px;
+border:none;
+border-radius:10px;
+}
+
+footer{
+background:#17172d;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
+font-size:18px;
+}
+
+.section-title{
+margin-bottom:25px;
+}
+
+@media(max-width:992px){
+
+.modules-grid,
+.project-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.container{
+width:95%;
+}
+
+.profile-grid,
+.modules-grid,
+.project-grid{
+grid-template-columns:1fr;
+}
+
+header h1{
+font-size:38px;
+}
+
+nav{
+flex-wrap:wrap;
+}
+
+nav a{
+padding:15px;
+}
+
+}
+
+
+.page{display:none;}
+.page.active{display:block;}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Ghavra Sekar Fatma Arhendra</h1>
+<p>Mahasiswa Universitas Matana</p>
+</header>
+
+<nav>
+<a href="#" onclick="showPage('home')">Home</a>
+<a href="#" onclick="showPage('modul')">Modul Mingguan</a>
+<a href="#" onclick="showPage('projects')">Projects</a>
+<a href="#" onclick="showPage('refleksi')">Refleksi Akhir</a>
+</nav>
+
+<div class="container">
+
+<div id="home" class="page active">
+
+<div class="card">
+<h2>Home</h2>
+
+<p>
+<b>Ghavra Sekar Fatma Arhendra</b> — Mata Kuliah Kewarganegaraan.
+</p>
+
+<br>
+
+<p>
+Selamat datang di portofolio digital saya. Halaman ini mendokumentasikan proses pembelajaran saya dalam mata kuliah Kewarganegaraan. Di sini, saya menyajikan rangkuman modul mingguan, showcase karya, serta refleksi akhir yang mengaitkan nilai-nilai kebangsaan, hukum, dan etika dengan tanggung jawab saya sebagai calon profesional di bidang Keselamatan dan Kesehatan Kerja (K3).
+</p>
+</div>
+
+<div class="profile-grid">
+
+<div class="profile-card">
+
+<img src="profil.jpeg" alt="Foto Profil">
+
+<h3>Introduksi Diri</h3>
+
+<p>
+Saya Ghavra Sekar Fatma Arhendra, seorang mahasiswi K3 yang saat ini sedang menempuh pendidikan di Universitas Matana. Melalui portofolio ini, saya ingin membagikan proses belajar, karya, serta refleksi saya dalam memahami nilai-nilai kebangsaan dan hukum yang berlaku di Indonesia.
+</p>
+
+</div>
+
+<div class="profile-card">
+
+<h3>Introduksi Mata Kuliah</h3>
+
+<p>
+Mata kuliah Kewarganegaraan dirancang untuk membangun kesadaran kritis mahasiswa terhadap nilai-nilai dasar kehidupan berbangsa. Fokus utamanya meliputi pemahaman mendalam tentang Pancasila, UUD 1945, serta identitas nasional. Melalui pembelajaran ini, mahasiswa diajak untuk memahami hak dan kewajiban mereka guna berkontribusi aktif dalam menjaga persatuan dan keutuhan NKRI.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="modul" class="page">
+
+<div class="card section-title">
+<h2>Modul Mingguan</h2>
+<p>Dokumentasi proses belajar setiap minggu.</p>
+</div>
+
+<div class="modules-grid">
+
+<div class="module">
+<h3>Pancasila secara Historis</h3>
+<img src="materi1.jpeg">
+<p><b>Ringkasan:</b> Secara historis, karakteristik manusia Indonesia ditandai dengan pengamalan Pancasila melalui pengetahuan yang terbuka, kritis, ilmiah, dan reflektif. Lini masa sejarah Indonesia sendiri bergerak dari era tradisional dan kolonial hingga masa modern yang dipicu gerakan nasional seperti Serikat Dagang Islam (1905), Budi Utomo (1908), dan Sumpah Pemuda (1928), meskipun terdapat kritik bahwa bangsa ini belum sepenuhnya merdeka dari "penjajahan" oleh bangsa sendiri karena Pancasila awalnya hadir sebagai kompromi politik demi deklarasi kemerdekaan. Sebagai fondasi tandingan terhadap individualisme barat, Soepomo dalam sidang BPUPKI tanggal 31 Mei 1945 kemudian merumuskan lima dasar negara yang digali dari kepribadian asli bangsa, yaitu persatuan, kekeluargaan, keseimbangan lahir dan batin, musyawarah, serta keadilan rakyat.</p>
+<br><p><b>Refleksi Diri:</b> Melalui pembelajaran materi Pancasila Secara Historis, saya menyadari bahwa memahami fondasi negara memerlukan pemikiran yang terbuka, kritis, dan reflektif. Menelusuri lini masa sejarah dari era tradisional hingga modern yang digerakkan oleh momentum seperti Serikat Dagang Islam, Budi Utomo, dan Sumpah Pemuda menyadarkan saya bahwa kemerdekaan adalah proses panjang yang harus terus dijaga. Materi ini juga memberi ruang bagi saya untuk berefleksi secara kritis bahwa tantangan terbesar bangsa saat ini adalah melepaskan diri dari 'penjajahan' oleh bangsa sendiri. Selain itu, pemikiran Soepomo pada sidang BPUPKI mengenai lima dasar negara mengajarkan saya pentingnya memegang teguh identitas asli bangsa, seperti rasa kekeluargaan dan musyawarah, sebagai perisai utama dalam menghadapi arus individualisme barat.</p>
+</div>
+
+<div class="module">
+<h3>Pancasila dalam Tinjauan Sosiologis</h3>
+<img src="materi2.jpeg">
+<p><b>Ringkasan:</b> Pancasila dalam Tinjauan Sosiologis menjelaskan Pancasila sebagai fondasi vital dalam pembentukan dan penyelenggaraan Negara Indonesia yang menjamin kehidupan masyarakat pluralistik, menjaga keutuhan NKRI, serta menegakkan demokrasi, HAM, dan keadilan sosial. Dalam perspektif sosiologi yang mempelajari struktur, kelompok, masalah, dan perubahan sosial Pancasila berfungsi sebagai pedoman utama pengendalian dan proses sosial yang selaras dengan nilai-nilai luhur bangsa. Pemahaman ini juga berkaitan dengan konsep bangsa yang bersifat terbayangkan (imagined), berdaulat (sovereign), dan terbatas (limited), di mana identitas bersama tersebut dibentuk oleh faktor-faktor krusial seperti primordial, sakral, tokoh, Bhinneka Tunggal Ika, sejarah, perkembangan ekonomi, serta kelembagaan.</p>
+<br><p><b>Refleksi Diri:</b>Melalui pembelajaran materi Pancasila dalam Tinjauan Sosiologis, saya menyadari bahwa Pancasila bukan sekadar teks hukum normatif, melainkan perekat sosial yang hidup di tengah realitas masyarakat Indonesia yang plural. Memahami sosiologi menyadarkan saya akan pentingnya Pancasila sebagai kompas dalam menyikapi berbagai masalah dan perubahan sosial yang terjadi di sekitar kita. Selain itu, refleksi mengenai konsep bangsa yang berdaulat serta faktor pembentuk identitas bersama seperti sejarah dan semangat Bhinneka Tunggal Ika menumbuhkan rasa tanggung jawab dalam diri saya untuk ikut menjaga keutuhan NKRI, menghormati martabat sesama, dan mengimplementasikan keadilan sosial dalam kehidupan sehari-hari. </p>
+</div>
+
+<div class="module">
+<h3>Pancasila secara Yuridis</h3>
+<img src="materi3.jpeg">
+<p><b>Ringkasan:</b> Pancasila Secara Yuridis mengulas peran Pancasila sebagai sumber hukum, yaitu tempat untuk menemukan dan menggali hukum yang diklasifikasikan menjadi dua jenis: sumber hukum materiil dan sumber hukum formil. Sumber hukum materiil merupakan fondasi yang menentukan dasar isi atau materi hukum, di mana pembentukannya dipengaruhi oleh faktor hubungan sosial masyarakat, kekuatan politik, kondisi sosial ekonomi, tradisi dan nilai keagamaan, kesusilaan, perkembangan internasional, serta keadaan geografis. Sementara itu, sumber hukum formil berfungsi memberikan kekuatan hukum mengikat pada suatu peraturan, yang wujudnya meliputi peraturan perundang-undangan, perjanjian antarnegara, serta yurisprudensi.</p>
+<br><p><b>Refleksi Diri:</b> Melalui pembelajaran materi Pancasila Secara Yuridis, saya memahami bahwa hukum tidak tercipta di ruang hampa, melainkan berakar kuat pada nilai-nilai materiil dan formil yang dipandu oleh Pancasila. Saya menyadari pentingnya aspek-aspek lingkungan seperti hubungan sosial, tradisi keagamaan, hingga moralitas kesusilaan dalam membentuk subtansi hukum yang adil bagi masyarakat. Kesadaran ini memperbarui pandangan saya bahwa sebagai warga negara, kita wajib menghormati produk hukum formil seperti peraturan perundang-undangan, sekaligus menjaga agar implementasi hukum tersebut tetap selaras dengan nilai luhur Pancasila demi menegakkan keadilan yang sejati.</p>
+</div>
+
+<div class="module">
+<h3>Pancasila dalam Tinjauan Filsafat</h3>
+<img src="materi4.jpeg">
+<p><b>Ringkasan:</b> Pancasila Tinjauan Filsafat menjelaskan bahwa Pancasila merupakan dasar Negara Indonesia yang dirumuskan melalui proses pemikiran panjang para pendiri bangsa sebagai landasan kokoh berdirinya NKRI. Selain sebagai dasar negara, Pancasila berfungsi sebagai pandangan hidup bangsa yang menjadi pedoman serta dasar bertindak dan berperilaku bagi setiap warga negara dalam kehidupan bermasyarakat, berbangsa, dan bernegara. Lebih lanjut, kedudukan Pancasila sebagai dasar negara dijabarkan ke dalam tiga fungsi utama, yaitu fungsi yuridis sebagai sumber dari segala sumber hukum Indonesia, fungsi sosiologis sebagai pedoman dalam mengatur kehidupan bermasyarakat, serta fungsi etis dan filosofis yang mendasari pedoman perilaku serta cara berpikir dalam mencari kebenaran.</p>
+<br><p><b>Refleksi Diri:</b> Melalui pembelajaran materi Pancasila Tinjauan Filsafat, saya menyadari bahwa Pancasila bukan sekadar simbol negara, melainkan hasil pemikiran mendalam yang harus menjiwai cara berpikir dan bertindak saya sehari-hari. Pemahaman mengenai fungsi etis dan filosofis mengajarkan saya untuk selalu menyelaraskan perilaku dalam mencari kebenaran dengan nilai-nilai luhur bangsa. Selain itu, kesadaran bahwa Pancasila mengikat aspek yuridis sekaligus sosiologis memperkuat komitmen saya untuk menjadi warga negara yang taat hukum dan adaptif dalam menjaga keharmonisan sosial di lingkungan masyarakat. </p>
+</div>
+
+<div class="module">
+<h3>Pancasila sebagi Ideologi Terbuka</h3>
+<img src="materi5.jpeg">
+<p><b>Ringkasan:</b> Materi Pancasila Sebagai Ideologi Terbuka menjelaskan Pancasila sebagai ideologi bangsa Indonesia yang menjadi dasar berpikir, bersikap, dan bertindak dalam kehidupan berbangsa dan bernegara. Secara etimologis, ideologi diartikan sebagai ilmu tentang gagasan atau cita-cita, sedangkan secara umum bermakna kumpulan gagasan, nilai, dan keyakinan sistematis yang menjadi pedoman kelompok masyarakat dalam aspek politik, ekonomi, sosial, budaya, dan agama. Sebagai ideologi negara, penerapan nyata Pancasila tercermin pada berbagai aspek kehidupan nasional, seperti penyelenggaraan pemerintahan yang demokratis, penghormatan tinggi terhadap Hak Asasi Manusia (HAM), penciptaan kehidupan beragama yang toleran, serta upaya berkesinambungan dalam mewujudkan keadilan bagi seluruh rakyat Indonesia.</p>
+<br><p><b>Refleksi Diri:</b> Melalui pembelajaran materi Pancasila Sebagai Ideologi Terbuka, saya menyadari bahwa Pancasila bukan sekadar konsep statis, melainkan pedoman hidup dinamis yang harus melandasi cara saya berpikir dan bertindak sehari-hari. Pemahaman ini membuka mata saya mengenai pentingnya menjaga toleransi beragama dan menjunjung tinggi nilai-nilai HAM sebagai wujud nyata penerapan ideologi negara di lingkungan sekitar. Kesadaran ini memotivasi saya untuk ikut berkontribusi dalam menciptakan lingkungan yang demokratis dan adil, dimulai dari tindakan-tindakan kecil di kehidupan bermasyarakat demi mendukung cita-cita besar bangsa Indonesia.</p>
+</div>
+
+
+</div>
+
+</div>
+
+<br><br>
+
+<div id="projects" class="page">
+
+<div class="card section-title">
+<h2>Showcase Karya</h2>
+<p>Kompilasi karya terbaik selama perkuliahan.</p>
+</div>
+
+<div class="project-grid">
+
+<div class="project">
+<h3>Podcast</h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iLfSerDWBmw?si=G-6jSx-uJ0sI26ZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p style="margin-top:15px;">
+Video podcast kelompok kami yang mengulas bentuk-bentuk perilaku menyimpang terhadap individu. Kami mengambil sudut pandang kritis lewat studi kasus nyata pelecehan di SDN Rawa Buntu 01 guna membangun kesadaran hukum dan sosial yang lebih baik.
+</p>
+</div>
+
+<div class="project">
+<h3>Infografis</h3>
+<img src="infografis.jpg">
+</div>
+
+<div class="project">
+<h3>Proposal Penelitian</h3>
+
+<object data="makalahh.pdf" type="application/pdf" width="100%" height="400px">
+    <p>Browser Anda tidak mendukung pratinjau PDF. Silakan unduh melalui link di bawah.</p>
+</object>
+
+<p style="margin-top: 15px; text-align: center;">
+    <a href="makalahh.pdf" target="_blank" style="padding: 8px 16px; background-color: #3b4a6b; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">
+        Buka PDF di Tab Baru ↗
+    </a>
+</p>
+</div>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div id="refleksi" class="page">
+
+<div class="card">
+
+<h2>Refleksi Akhir</h2>
+
+<br>
+
+<h3>Evaluasi Pengetahuan Kewarganegaraan</h3>
+
+<br>
+
+<p>
+Melalui mata kuliah Kewarganegaraan ini, saya memperoleh pemahaman yang lebih mendalam mengenai struktur konstitusi, hak asasi manusia, dan dinamika hukum di Indonesia. Evaluasi ini menyadarkan saya bahwa memahami negara bukan sekadar menghafal teori, melainkan mengasah kepekaan kritis terhadap isu-isu sosial seperti fenomena perilaku menyimpang di masyarakat serta pentingnya penegakan hukum yang adil demi menjaga keutuhan nasional.</p>
+
+<br>
+
+<h3>Pembaruan Sikap dan Pengetahuan</h3>
+
+<br>
+
+<p>
+Melalui mata kuliah Kewarganegaraan, saya mengalami perkembangan signifikan dari segi pengetahuan maupun sikap. Secara kognitif, saya kini memahami lebih dalam mengenai hak dan kewajiban konstitusional, hukum, serta dinamika identitas nasional. Secara afektif, pemahaman ini memperbarui sikap saya menjadi lebih kritis, toleran, dan sadar akan tanggung jawab moral sebagai warga negara untuk aktif menjaga persatuan di tengah keberagaman.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2025 Ghavra. All Rights Reserved.
+</footer>
+
+
+<script>
+function showPage(pageId){
+document.querySelectorAll('.page').forEach(page=>{
+page.classList.remove('active');
+});
+document.getElementById(pageId).classList.add('active');
+window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
+
